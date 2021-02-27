@@ -104,7 +104,6 @@ while (continuar == 0) {
 }
 
 //Troca de sala entre as etapas
-console.log(`Depois da troca de sala da metade dos alunos`)
 let ex1, ex2, ex3, ex4, etapa2_Sala1_1 = [], etapa2_Sala2_2 = []
 let etapa2_Sala1 = [], etapa2_Sala2 = []
 
@@ -190,11 +189,11 @@ while (continuar2 == 0) {
     continuar2 = interacao.questionInt(`\nDigite 0 se quiser fazer uma nova pesquisa, ou digite outro valor se quiser continuar o programa  `)
 }
 
-//consultar uma pessoa cadastrada no treinamento na etapa 1
-console.log("\nConsultar uma pessoa cadastrada no treinamento na etapa 1")
+//consultar uma pessoa cadastrada no treinamento na primeira etapa 
+console.log("\nConsultar uma pessoa cadastrada no treinamento na primeira etapa ")
 let continuar3 = interacao.questionInt(`Digite 0 se quiser fazer uma pesquisa, ou digite outro valor se quiser continuar o programa `)
 while (continuar3 == 0) {
-    let consulta = interacao.question("\ndigite o nome a ser pesquisado: ")
+    let consulta = interacao.question("\nDigite o nome a ser pesquisado: ")
     let numero = sala1.pessoas.indexOf(consulta)
 
     if (consulta == sala1.pessoas[numero]) {
@@ -209,11 +208,11 @@ while (continuar3 == 0) {
     continuar3 = interacao.questionInt(`\nDigite 0 se quiser fazer uma nova pesquisa, ou digite outro valor se quiser continuar o programa  `)
 }
 
-//consultar uma pessoa cadastrada no treinamento na etapa 2
-console.log("\nConsultar uma pessoa cadastrada no treinamento na etapa 2")
+//consultar uma pessoa cadastrada no treinamento na segunda etapa 
+console.log("\nConsultar uma pessoa cadastrada no treinamento na segunda etapa ")
 let continuar4 = interacao.questionInt(`Digite 0 se quiser fazer uma pesquisa, ou digite outro valor se quiser continuar o programa `)
 while (continuar4 == 0) {
-    let consulta2 = interacao.question("\ndigite o nome a ser pesquisado: ")
+    let consulta2 = interacao.question("\nDigite o nome a ser pesquisado: ")
     let numero2 = sala1.pessoas_Etapa2.indexOf(consulta2)
     console.log("numero 2 = " + numero2)
 
